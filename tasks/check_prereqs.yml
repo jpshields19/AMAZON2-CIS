@@ -4,6 +4,7 @@
   ansible.builtin.yum:
       name: "{{ item }}"
       state: latest
+      use_backend: yum3
   register: python2_packages
   with_items:
       - python2-rpm
