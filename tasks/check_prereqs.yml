@@ -9,7 +9,7 @@
   register: python2_packages
   with_items:
       - python2-rpm
-      - libselinux-python
+      - python2-libselinux
   vars:
       ansible_python_interpreter: "{{ python2_bin }}"
 
