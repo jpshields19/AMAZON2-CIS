@@ -1,7 +1,4 @@
 ---
-- name: Get Controlled Node Distribution
-  debug:
-    msg: "{{ ansible_lsb.description }}"
 - name: "PREREQ | Add the required packages installed | Python2"
   ansible.builtin.package:
       name: "{{ item }}"
