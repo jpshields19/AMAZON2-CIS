@@ -774,8 +774,8 @@ amazon2cis_max_log_file_size: 10
 
 # auditd settings
 amazon2cis_auditd:
-    disk_error_action: halt
-    disk_full_action: halt
+    disk_error_action: "halt"
+    disk_full_action: "halt"
     action_mail_acct: root
     space_left_action: email
     admin_space_left_action: single
