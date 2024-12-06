@@ -9,6 +9,7 @@
   with_items:
       - python2-rpm
       - libselinux-python
+      - jmespath
   vars:
       ansible_python_interpreter: "{{ python2_bin }}"
 
@@ -23,3 +24,6 @@
       - ansible_python.version.major is version('3', '=')
   vars:
       ansible_python_interpreter: "{{ python2_bin }}"
+- name: Debug auditd variables
+  debug:
+    msg: "{{ amazon2cis_auditd }}"
