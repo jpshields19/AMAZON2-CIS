@@ -9,8 +9,8 @@
   with_items:
       - python2-rpm
       - libselinux-python
-#   vars:
-#       ansible_python_interpreter: "{{ python2_bin }}"
+  vars:
+      ansible_python_interpreter: "{{ python2_bin }}"
 
 - name: "PREREQ | Check required packages installed | Python3 "
   ansible.builtin.package:
