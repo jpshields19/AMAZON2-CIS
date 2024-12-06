@@ -1,14 +1,14 @@
 ---
 
-# - name: "PREREQ | Add the required packages installed | Python2"
-#   ansible.builtin.yum:
-#       name: "{{ item }}"
-#       state: latest
-#       use_backend: yum
-#   register: python2_packages
-#   with_items:
-#       - python2-rpm
-#       - libselinux-python
+- name: "PREREQ | Add the required packages installed | Python2"
+  ansible.builtin.yum:
+      name: "{{ item }}"
+      state: latest
+      use_backend: yum
+  register: python2_packages
+  with_items:
+      - python2-rpm
+      - libselinux-python
 #   vars:
 #       ansible_python_interpreter: "{{ python2_bin }}"
 
